@@ -5,11 +5,12 @@ The Burden Bot is a github bot that can be added to open source Github repositor
 ## Features
 The Burden Bot can perform the following functions:
 
-Automatically identify if an issue or pull request is a feature request.
-Identify if the requestor is affiliated with a Fortune 500 organization.
-Identify if the requestor's organization has sponsored the repo maintainer via Thanks.dev.
-Leave a message asking for sponsorship from the requestor's organization if they belong to a Fortune 500 company and have requested a feature but have not sponsored the repo maintainer.
-How to Use
+ - Automatically identify if an issue or pull request is a feature request.
+ - Identify if the requestor is affiliated with a Fortune 500 organization.
+ - Identify if the requestor's organization has sponsored the repo maintainer via Thanks.dev.
+ - Leave a message asking for sponsorship from the requestor's organization if they belong to a Fortune 500 company and have requested a feature but have not sponsored the repo maintainer.
+
+## How to Use
 To use the Burden Bot, you must first add it to your open source Github repository. Once added, the bot will start monitoring the repository's issues and pull requests.
 
 ## Configuration
