@@ -1,5 +1,6 @@
 # Burden Bot for Open Source Github Repositories
-The Burden Bot is a tool that can be added to open source Github repositories to help with the management of issues and pull requests. This bot has advanced features such as identifying feature requests and the requestor's affiliation with a Fortune 500 organization. Additionally, it can identify if the requestor's organization has sponsored the repo maintainer via Thanks.dev.
+The Burden Bot is a github bot that can be added to open source Github repositories to help with the management of issues and pull requests. This bot has advanced features such as identifying feature requests and the requestor's affiliation with a Fortune 500 organization. Additionally, it can identify if the requestor's organization has sponsored the repo maintainer via Thanks.dev.
+
 
 ## Features
 The Burden Bot can perform the following functions:
@@ -18,10 +19,12 @@ The following are the environment variables that need to be set:
 
 GITHUB_TOKEN: This token is required to access Github's API.
 THANKS_DEV_TOKEN: This token is required to access Thanks.dev's API.
-Usage
-Once the Burden Bot is configured, it will start monitoring the repository's issues and pull requests. When it identifies a feature request raised by a requestor from a Fortune 500 company that has not sponsored the repo maintainer via Thanks.dev, it will leave a message asking for sponsorship.
+
+## Usage
+When the Burden Bot identifies an issue that is beyond the scope of the license, it will leave a message for the requestor. The message will include the following information:
+
+"This issue seems to be beyond the scope of [license], given that this is a [issue type] raised by [employee] [company] who’s currently not [funding] / [MAINTAINER].
+
+Please consider supporting the [project] & [ecosystem] by funding your dependency tree."
 
 The Burden Bot will continue to monitor the repository's issues and pull requests and perform the necessary actions based on the configured rules.
-
-## Conclusion
-The Burden Bot is an excellent tool for managing open source Github repositories. It can help reduce the burden on the repository maintainer and ensure that feature requests are managed efficiently.
