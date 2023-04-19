@@ -18,8 +18,8 @@ To enable the advanced features of the Burden Bot, you need to configure it with
 
 The following are the environment variables that need to be set:
 
-GITHUB_TOKEN: This token is required to access Github's API.
-THANKS_DEV_TOKEN: This token is required to access Thanks.dev's API.
+ - GITHUB_TOKEN: This token is required to access Github's API.
+ - THANKS_DEV_TOKEN: This token is required to access Thanks.dev's API.
 
 ## Usage
 When the Burden Bot identifies an issue that is beyond the scope of the license, it will leave a message for the requestor. The message will include the following information:
