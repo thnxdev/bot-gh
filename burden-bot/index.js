@@ -1,5 +1,6 @@
 const {Configuration, OpenAIApi} = require("openai");
 
+console.log("app is ready")
 module.exports = (app) => {
     // Your code here
     app.log.info("Yay, the app was loaded!");
