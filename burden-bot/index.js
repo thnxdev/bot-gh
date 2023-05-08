@@ -1,17 +1,12 @@
 const {Configuration, OpenAIApi} = require("openai");
 
-console.log("app is ready")
 module.exports = (app) => {
-    // Your code here
-    app.log.info("Yay, the app was loaded!");
-
     const configuration = new Configuration({
         apiKey: process.env.OPENAI_API_KEY,
     });
     const openai = new OpenAIApi(configuration);
 
     app.on("issues.opened", async (context) => {
-        // console.log()
         try {
             const completion = await openai.createChatCompletion({
                 model: "gpt-3.5-turbo",

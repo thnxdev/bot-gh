@@ -1,0 +1,20 @@
+name: 'burden bot for opensource maintainer'
+description: 'A burden bot to help opensource maintainer get funded'
+author: 'thanks.dev'
+inputs:
+  app_id:
+    required: true
+    description: 'GitHub App ID'
+  private_key:
+    required: true
+    description: 'Private key for the GitHub App'
+  scope:
+    required: false
+    description: 'Scope of installation account'
+    default: ''
+outputs:
+  token:
+    description: 'Github Token for App installation'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
